@@ -21,7 +21,7 @@ const Register = () =>
             phone:phone,
             dob:dob
         }
-        axios.post('http://localhost:8000/create-user/', data)
+        axios.post('http://54.87.235.156:8000/create-user/', data)
 
         .then(response=>{
          navigate('/home',  {state:{data:response.data.data}});
